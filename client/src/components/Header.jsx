@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import {useSelector} from 'react-redux';
+import Profile from "../pages/Profile";
 
 const Header = () => {
 
