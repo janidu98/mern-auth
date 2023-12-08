@@ -52,7 +52,7 @@ const Profile = () => {
           request.resource.size < 2 * 1024 * 1024 &&
           request.resource.contentType.matches('image/.*')
         */}
-        <img src={currentUser.profilePicture} alt="profile" className="h-24 w-24 self-center rounded-full object-cover mt-2 cursor-pointer" onClick={() => fileRef.current.click()} />
+        <img src={formData.profilePicture || currentUser.profilePicture} alt="profile" className="h-24 w-24 self-center rounded-full object-cover mt-2 cursor-pointer" onClick={() => fileRef.current.click()} />
         <p className="text-sm self-center">
           {imageError ? (
             <span className="text-red-700">Error uploading image (file size must be less than 2MB)</span>
